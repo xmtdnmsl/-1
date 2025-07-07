@@ -8,9 +8,6 @@ local about = UITab1:section("『冷寂』",false)
 about:Label("1.冷寂")
 about:Label("2.墨")
 about:Label("3.房主")
-
-local about = UITab1:section("『信息』",false)
-
 about:Label("你的账号年龄:"..player.AccountAge.."天")
 about:Label("你的注入器:"..identifyexecutor())
 about:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
