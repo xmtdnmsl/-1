@@ -5,9 +5,9 @@ local UITab1 = win:Tab("『信息』",'16060333448')
 
 local about = UITab1:section("『冷寂』",false)
 
-about:Label("作者1.冷寂")
-about:Label("作者2.墨")
-about:Label("作者3.风御")
+about:Label("1.冷寂")
+about:Label("2.墨")
+about:Label("3.风御")
 
 about:Button("3912831893",function()
     setclipboard("哦")
