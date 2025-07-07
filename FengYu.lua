@@ -8,6 +8,10 @@ local about = UITab1:section("『冷寂』",false)
 about:Label("冷寂")
 about:Label("冷寂")
 
+bin:Label("你的用户名:"..game.Players.LocalPlayer.Name)
+bin:Label("你的注入器:"..identifyexecutor())
+bin:Label("服务器id:"..game.GameId)
+
 about:Button("3912831893",function()
     setclipboard("哦")
 end)
