@@ -9,6 +9,10 @@ about:Label("1.冷寂")
 about:Label("2.墨")
 about:Label("3.房主")
 
+bin:Label("你的账号年龄:"..player.AccountAge.."天")
+bin:Label("你的注入器:"..identifyexecutor())
+bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+
 about:Button("3912831893",function()
     setclipboard("哦")
 end)
@@ -33,30 +37,6 @@ if Value then
 
 		end
 end)
-
-about:Toggle("速度","Toggle",false,function(Value)
-if Value then
-
-	Min = 50,
-
-	Max = 50,
-
-	Default = 50,
-
-	Color = Color3.fromRGB(255,255,255),
-
-	Increment = 1,
-
-	ValueName = "50",
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-
-	end    
-
-})
-
 
 local UITab1 = win:Tab("『绘制』",'16060333448')
 
