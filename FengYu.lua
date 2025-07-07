@@ -33,13 +33,61 @@ if Value then
 
 		end
 end)
-about:AddTextbox({
-	Name = "移动速度",
+
+Tab:AddTextbox({
+
+	Name = "重力设置",
+
 	Default = "",
+
 	TextDisappear = true,
+
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+		game.Workspace.Gravity = Value
+
 	end
+
+})
+
+Tab:AddSlider({
+
+	Name = "跳跃高度",
+
+	Min = 50,
+
+	Max = 200,
+
+	Default = 50,
+
+	Color = Color3.fromRGB(255,255,255),
+
+	Increment = 1,
+
+	ValueName = "数值",
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+	end    
+
+})
+
+Tab:AddTextbox({
+
+	Name = "跳跃高度设置",
+
+	Default = "",
+
+	TextDisappear = true,
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+	end
+
 })
 
 local UITab1 = win:Tab("『绘制』",'16060333448')
