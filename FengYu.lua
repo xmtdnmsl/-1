@@ -34,14 +34,6 @@ if Value then
 		end
 end)
 
-about:Button("甩飞别人,"function()
-
-loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
-
-  end
-  
-end)
-
 local UITab1 = win:Tab("『绘制』",'16060333448')
 
 local about = UITab1:section("『玩家绘制』",false)
