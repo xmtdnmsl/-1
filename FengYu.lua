@@ -33,7 +33,7 @@ if Value then
 
 		end
 end)
-Tab:AddTextbox({
+about:AddTextbox({
 	Name = "移动速度",
 	Default = "",
 	TextDisappear = true,
