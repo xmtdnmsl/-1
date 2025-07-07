@@ -21,7 +21,7 @@ about:Button("自杀",function()
 HumanDied = true
 end)
 
-credits:Toggle("夜视脚本", "", false, function(state)
+about:Button("夜视脚本", "", false, function(state)
         if state then
         game.Lighting.Ambient = Color3.new(1, 1, 1)
         else
