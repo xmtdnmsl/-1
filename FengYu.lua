@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xmtdnmsl/-1/refs/heads/main/UI.lua"))()     
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/djdu894/ui/refs/heads/main/ui.lua"))();     
 local win = library:new("JOJO脚本")
 --
 local UITab1 = win:Tab("『信息』",'16060333448')
