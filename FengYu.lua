@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/djdu894/ui/refs/heads/main/ui.lua"))()
+local library = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 local win = library:new("JOJO脚本")
 --
 local UITab1 = win:Tab("『信息』",'16060333448')
@@ -8,6 +8,30 @@ local about = UITab1:section("『冷寂』",false)
 about:Label("1.冷寂")
 about:Label("2.墨")
 about:Label("3.风御")
+
+local about = UITab1:section("查看玩家信息",true)
+
+about:Label("你的账号年龄:"..player.AccountAge.."天")
+about:Label("你的注入器:"..identifyexecutor())
+about:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+about:Label("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+about:Label("你现在的服务器id:"..game.GameId)
+about:Label("你的用户ID:"..game.Players.LocalPlayer.UserId)
+about:Label("获取客户端ID:"..game:GetService("RbxAnalyticsService"):GetClientId())
+about:Toggle("脚本框架变小一点", "", false, function(state)
+        if state then
+        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
+        else
+            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
+        end
+    end)
+    about:Button("关闭脚本",function()
+        game:GetService("CoreGui")["frosty"]:Destroy()
+    end)
+    
+about:Button("怕点不到才加的",function()
+
+end)
 
 about:Button("3912831893",function()
     setclipboard("哦")
