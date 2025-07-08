@@ -22,7 +22,7 @@ UICorner.Parent = Frame
 UICorner.CornerRadius = UDim.new(0, 10)
 
 PhotoLabel.Parent = Frame
-PhotoLabel.Image = "rbxassetid:1385056859"
+PhotoLabel.Image = "rbxassetid:17492300930"
 PhotoLabel.ImageTransparency = 0
 PhotoLabel.Position = UDim2.new(0.027, 0, 0.05, 0)
 PhotoLabel.Size = UDim2.new(0.47, 0, 0.897, 0)
