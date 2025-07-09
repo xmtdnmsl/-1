@@ -22,7 +22,7 @@ UICorner.Parent = Frame
 UICorner.CornerRadius = UDim.new(0, 10)
 
 PhotoLabel.Parent = Frame
-PhotoLabel.Image = "rbxassetid://8931997831"
+PhotoLabel.Image = "rbxassetid://112136634870518"
 PhotoLabel.ImageTransparency = 0
 PhotoLabel.Position = UDim2.new(0.027, 0, 0.05, 0)
 PhotoLabel.Size = UDim2.new(0.47, 0, 0.897, 0)
@@ -31,7 +31,7 @@ AgreeButton.Parent = Frame
 AgreeButton.BackgroundColor3 = Color3.fromRGB(66, 134, 244) 
 AgreeButton.Position = UDim2.new(0.548, 0, 0.83, 0) 
 AgreeButton.Size = UDim2.new(0.4, 0, 0.1, 0) 
-AgreeButton.Text = "必须同意😋😋😋"
+AgreeButton.Text = "同意"
 AgreeButton.TextColor3 = Color3.new(0, 0, 0) 
 AgreeButton.Font = Enum.Font.SourceSansBold
 AgreeButton.TextScaled = true
