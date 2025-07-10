@@ -102,21 +102,122 @@ Tabs.SpeedTab:Toggle({
     end
 })
 
-Tabs.Tab:AddButton({
-	Title = "透视",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/PSXhuge/1/114514/toushi"))()
-  	end
+Tabs.SpeedTab:Button({
+    Title = "踏空",
+    Desc = "踏空",
+    Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()        
+    end
 })
 
-Tabs.Tab:AddToggle({
-	Title = "夜视",
-	Desc = false,
-	Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end
+Tabs.SpeedTab:Button({
+    Title = "爬墙",
+    Desc = "爬墙",
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "光影",
+    Desc = "光影",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "伪名说话",
+    Desc = "伪名说话",
+    Callback = function()
+    loadstring(game:HttpGet(('https://pastefy.ga/zCFEwaYq/raw'),true))()
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "飞车",
+    Desc = "飞车",
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "甩飞",
+    Desc = "甩飞",
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "键盘",
+    Desc = "键盘",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "传送玩家",
+    Desc = "传送玩家",
+    Callback = function()
+    loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()   
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "最强透视",
+    Desc = "最强透视",
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "碰撞箱",
+    Desc = "碰撞箱",
+    Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/JYFXjEVh'))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "自瞄",
+    Desc = "自瞄",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Aimbot.lua"))() 
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "变流畅",
+    Desc = "变流畅",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/FPS-X-GUI/main/FPS_X.lua"))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "子追",
+    Desc = "子追",
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/1AJ69eRG"))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "死亡笔记",
+    Desc = "死亡笔记",
+    Callback = function()
+        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "动画中心",
+    Desc = "动画中心",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()        
+    end
 })
