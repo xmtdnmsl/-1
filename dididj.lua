@@ -159,12 +159,11 @@ Tabs.SpeedTab:Button({
 })
 
 Tabs.SliderTab:Slider({
-    Title = "我是滑块",
+    Title = "跳跃高度",
     Value = {
-        Min = 1,---最新值
-        Max = 100,---最大值
-        Default = 75,-初始值
+        Min = 1,
+        Max = 100,
+        Default = 75,
     },
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-    Callback = function(value) print("Brightness set to: " .. value) end---返回的操作
 })
