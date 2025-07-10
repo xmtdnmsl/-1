@@ -181,15 +181,3 @@ Tabs.SpeedTab:Button({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
     end
 })
-
-Tabs.Tab:AddSlider({
-	Title = "跳跃高度",
-	Desc = "跳跃高度"
-	Min = 50,
-	Max = 200,
-	Step = 50,
-	ValueName = "数值",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end    
-})
