@@ -158,26 +158,3 @@ Tabs.SpeedTab:Button({
     end
 })
 
-Tabs.SpeedTab:Button({
-    Title = "甩飞",
-    Desc = "甩飞",
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()   
-    end
-})
-
-Tabs.SpeedTab:Button({
-    Title = "透视",
-    Desc = "透视",
-    Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
-    end
-})
-
-Tabs.SpeedTab:Button({
-    Title = "穿墙",
-    Desc = "穿墙",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
-    end
-})
