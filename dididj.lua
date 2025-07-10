@@ -159,12 +159,13 @@ Tabs.SpeedTab:Button({
 })
 
 Tabs.SliderTab:Slider({
-    Title = "跑步速度",
-    Value = 7,
-    Min = 1,
-    Max = 100,
-    Default = 75,
+    Title = "跳跃高度",
+    Value = {
+           Min = 1,
+           Max = 100,
+           Default = 75,
+    }
     Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
     end
 })
