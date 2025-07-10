@@ -94,10 +94,10 @@ Tabs.SpeedTab:Button({
     end
 })
 
-Tabs.SpeedTab:Toggle({
+Tabs.SpeedTab:Button({
     Title = "连跳",
     Desc = "连跳",
-    Callback = function(Value)
+    Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
     end
 })
@@ -127,58 +127,10 @@ Tabs.SpeedTab:Button({
 })
 
 Tabs.SpeedTab:Button({
-    Title = "伪名说话",
-    Desc = "伪名说话",
-    Callback = function()
-    loadstring(game:HttpGet(('https://pastefy.ga/zCFEwaYq/raw'),true))()
-    end
-})
-
-Tabs.SpeedTab:Button({
-    Title = "飞车",
-    Desc = "飞车",
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
-    end
-})
-
-Tabs.SpeedTab:Button({
-    Title = "甩飞",
-    Desc = "甩飞",
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()
-    end
-})
-
-Tabs.SpeedTab:Button({
     Title = "键盘",
     Desc = "键盘",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()        
-    end
-})
-
-Tabs.SpeedTab:Button({
-    Title = "传送玩家",
-    Desc = "传送玩家",
-    Callback = function()
-    loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()   
-    end
-})
-
-Tabs.SpeedTab:Button({
-    Title = "最强透视",
-    Desc = "最强透视",
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))()        
-    end
-})
-
-Tabs.SpeedTab:Button({
-    Title = "碰撞箱",
-    Desc = "碰撞箱",
-    Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/JYFXjEVh'))()        
     end
 })
 
@@ -207,17 +159,37 @@ Tabs.SpeedTab:Button({
 })
 
 Tabs.SpeedTab:Button({
-    Title = "死亡笔记",
-    Desc = "死亡笔记",
+    Title = "甩飞",
+    Desc = "甩飞",
     Callback = function()
-        
+    loadstring(game:HttpGet("https://pastebin.com/raw/GnvPVBEi"))()   
     end
 })
 
 Tabs.SpeedTab:Button({
-    Title = "动画中心",
-    Desc = "动画中心",
+    Title = "透视",
+    Desc = "透视",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()        
+    loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
     end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "穿墙",
+    Desc = "穿墙",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
+    end
+})
+
+Tabs.Tab:AddSlider({
+	Title = "跳跃高度",
+	Desc = "跳跃高度"
+	Min = 50,
+	Max = 200,
+	Step = 50,
+	ValueName = "数值",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
 })
