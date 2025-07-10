@@ -20,8 +20,8 @@ end
 local Confirmed = false
 
 WindUI:Popup({
-    Title = "Welcome! Popup Example",
-    Icon = "rbxassetid://129260712070622",
+    Title = "欢迎进入冷寂脚本! 记得进群",
+    Icon = "rbxassetid://112136634870518",
     IconThemed = true,
     Content = "This is an Example UI for the " .. gradient("WindUI", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
     Buttons = {
@@ -102,12 +102,21 @@ Tabs.SpeedTab:Toggle({
     end
 })
 
-Tabs.AddTextbox:Textbox({
-	Title = "跳跃高度设置",
-	Desc = "高度",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end
+Tabs.Tab:AddButton({
+	Title = "透视",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/PSXhuge/1/114514/toushi"))()
+  	end
 })
 
+Tabs.Tab:AddToggle({
+	Title = "夜视",
+	Desc = false,
+	Callback = function(Value)
+		if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+	end
+})
