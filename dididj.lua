@@ -102,17 +102,10 @@ Tabs.SpeedTab:Button({
 })
 
 Tabs.SpeedTab:Button({
-    Title = "飞行",
-    Desc = "飞行",
+    Title = "连跳",
+    Desc = "连跳",
     Callback = function()
-        local code = [[
-            local args = {"collectOrb", "Red Orb", "City"}
-            while true do
-                game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(unpack(args))
-                task.wait(0.0001)
-            end
-        ]]
-        loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
     end
 })
 
