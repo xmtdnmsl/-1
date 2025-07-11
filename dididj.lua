@@ -163,9 +163,6 @@ Tabs.SpeedToggle:Toggle({
     end
 })
 
-local Tabs = {}
-
-do
     Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "脚本", Icon = "zap" })
 end
 
