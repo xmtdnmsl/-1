@@ -161,7 +161,7 @@ Tabs.SpeedTab:Button({
 Tabs.SpeedToggle:Toggle({
     Title = "夜视",
     Desc = "夜视",
-    Callback = function()
+    Callback = function(Value)
 		if Value then
 		    game.Lighting.Ambient = Color3.new(1, 1, 1)
 		else
