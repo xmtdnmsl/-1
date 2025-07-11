@@ -1,4 +1,4 @@
-WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/refs/heads/master/Example.lua"))()
 
 function gradient(text, startColor, endColor)
     local result = ""
@@ -58,8 +58,8 @@ local Window = WindUI:CreateWindow({
     SideBarWidth = 200,
     ScrollBarEnabled = true,
     KeySystem = {
-        Key = { "1234", "5678" },
-        Note = "Example Key System. \n\nThe Key is '1234' or '5678",
+        Key = { "KL牛逼", "冷寂牛逼" },
+        Note = "Example Key System. \n\n进群获得卡密1056379494,
         URL = "link-to-linkvertise-or-discord-or-idk",
         SaveKey = true,
     },
@@ -150,28 +150,17 @@ Tabs.SpeedTab:Button({
     end
 })
 
-Tabs.SpeedToggle:Toggle({
-    Title = "夜视",
-    Desc = "夜视",
-    Callback = function(Value)
-        Yeshi = Value
-        if Yeshi then
-            game.Lighting.Ambient = Color3.new(1, 1, 1)
-        else
-            game.Lighting.Ambient = Color3.new(0, 0, 0)
-        end
-    end
-})
+local Tabs = {}
 
-    Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "脚本", Icon = "zap" })
+do
+    Tabs.MainTab = Window:Section({Title = "力量传奇", Opened = true})
+    Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "力量传奇脚本", Icon = "zap" })
 end
 
-Window:SelectTab(1)
-
 Tabs.SpeedTab:Button({
-    Title = "kl脚本",
-    Desc = "kl脚本",
+    Title = "力量",
+    Desc = "力量脚本",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/xmtdnmsl/-1/refs/heads/main/dididj.lua"))()        
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xmtdnmsl/-1/refs/heads/main/KL(1).lua"))()        
     end
 })
