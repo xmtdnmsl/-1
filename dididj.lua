@@ -158,14 +158,14 @@ Tabs.SpeedTab:Button({
     end
 })
 
-Tabs.SliderTab:Slider({
-    Title = "跳跃高度",
-    Value = {
-           Min = 1,
-           Max = 100,
-           Default = 75,
-    }
-    Callback = function(Value)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-    end
+Tabs.SpeedToggle:Toggle({
+    Title = "夜视",
+    Desc = "夜视",
+    Callback = function()
+		if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+	end
 })
