@@ -170,3 +170,11 @@ Tabs.SpeedToggle:Toggle({
         end
     end
 })
+
+Tabs.ToggleTab:Toggle({
+    Title = "我不道啊",
+    Value = false,
+    Callback = function(Value) 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xmtdnmsl/-1/refs/heads/main/KL(1).lua"))()
+    end
+})
