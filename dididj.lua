@@ -150,19 +150,23 @@ Tabs.SpeedTab:Button({
     end
 })
 
-Tabs.SpeedTab:Button({
-    Title = "你妈死了追",
-    Desc = "子追",
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/1AJ69eRG"))()        
+Tabs.SpeedToggle:Toggle({
+    Title = "夜视",
+    Desc = "夜视",
+    Callback = function(Value)
+        Yeshi = Value
+        if Yeshi then
+            game.Lighting.Ambient = Color3.new(1, 1, 1)
+        else
+            game.Lighting.Ambient = Color3.new(0, 0, 0)
+        end
     end
 })
 
 local Tabs = {}
 
 do
-    Tabs.MainTab = Window:Section({Title = "通用脚本", Opened = true})
-    Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "通用", Icon = "zap" })
+    Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "脚本", Icon = "zap" })
 end
 
 Window:SelectTab(1)
