@@ -162,10 +162,11 @@ Tabs.SpeedToggle:Toggle({
     Title = "夜视",
     Desc = "夜视",
     Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end
+        Yeshi = Value
+        if Yeshi then
+            game.Lighting.Ambient = Color3.new(1, 1, 1)
+        else
+            game.Lighting.Ambient = Color3.new(0, 0, 0)
+        end
+    end
 })
