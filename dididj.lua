@@ -23,7 +23,7 @@ WindUI:Popup({
     Title = "欢迎进入冷寂脚本! 记得进群",
     Icon = "rbxassetid://112136634870518",
     IconThemed = true,
-    Content = "This is an Example UI for the " .. gradient("WindUI", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
+    Content = "本脚本里的所有脚本都是极品 " .. gradient("WindUI", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
     Buttons = {
         {
             Title = "Cancel",
@@ -153,14 +153,86 @@ Tabs.SpeedTab:Button({
 local Tabs = {}
 
 do
-    Tabs.MainTab = Window:Section({Title = "力量传奇", Opened = true})
-    Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "力量传奇脚本", Icon = "zap" })
+    Tabs.MainTab = Window:Section({Title = "极品通用", Opened = true})
+    Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "极品通用", Icon = "zap" })
 end
 
 Tabs.SpeedTab:Button({
-    Title = "力量",
-    Desc = "力量脚本",
+    Title = "控制NPC",
+    Desc = "控制NPC",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/xmtdnmsl/-1/refs/heads/main/KL(1).lua"))()        
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/fe-source/refs/heads/main/NPC/source/main.Luau"))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "FE动作脚本",
+    Desc = "FE动作脚本",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Emircxy/Lear/refs/heads/main/Lear%20Hub"))()        
+    end
+})
+
+local Tabs = {}
+
+do
+    Tabs.MainTab = Window:Section({Title = "最强战场", Opened = true})
+    Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "最强战场", Icon = "zap" })
+end
+
+Tabs.SpeedTab:Button({
+    Title = "最强(最牛逼的得先下资源)",
+    Desc = "最强(最牛逼的得先下资源)",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/SG_DEMO.lua"))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "最强2",
+    Desc = "最强2",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hamletirl/sunjingwoo/refs/heads/main/sunjingwoo"))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "最强3",
+    Desc = "最强3",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
+-- enjoy
+-- Eid Mubarak!!        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "最强4",
+    Desc = "最强4",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()        
+    end
+})
+
+local Tabs = {}
+
+do
+    Tabs.MainTab = Window:Section({Title = "被遗弃", Opened = true})
+    Tabs.SpeedTab = Tabs.MainTab:Tab({ Title = "被遗弃", Icon = "zap" })
+end
+
+Tabs.SpeedTab:Button({
+    Title = "被遗弃(最强)",
+    Desc = "被遗弃(最强)",
+    Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/sigmaboy-sigma-boy/sigmaboy-sigma-boy/refs/heads/main/StaminaSettings.ESP.PIDC.raw'))()        
+    end
+})
+
+Tabs.SpeedTab:Button({
+    Title = "被遗弃2",
+    Desc = "被遗弃2",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BobJunior1/ForsakenBoi/refs/heads/main/B0bbyHub"))()        
     end
 })
