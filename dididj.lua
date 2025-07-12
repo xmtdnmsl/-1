@@ -1,4 +1,5 @@
 WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+
 function gradient(text, startColor, endColor)
     local result = ""
     local length = #text
