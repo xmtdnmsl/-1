@@ -59,7 +59,7 @@ local Window = WindUI:CreateWindow({
     ScrollBarEnabled = true,
     KeySystem = {
         Key = { "KL牛逼", "冷寂牛逼" },
-        Note = "Example Key System. \n\n进群获得卡密1056379494,
+        Note = "Example Key System. \n\n进群获得卡密1056379494",
         URL = "link-to-linkvertise-or-discord-or-idk",
         SaveKey = true,
     },
